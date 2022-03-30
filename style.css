@@ -1,0 +1,79 @@
+body{
+	background-color: lightgray;
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+	height: 10%;
+	background-color: seagreen;
+}
+.logo{
+	align-items: flex-start;
+}
+.mainimage{
+	width:  100%;
+	object-fit: cover;
+}
+.list{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+a{
+	margin: 20px;
+}
+.top{
+	display: flex;
+	justify-content: center;
+}
+.maintext{
+	margin: 20px;
+	font-size: large;
+	line-height: 50px;
+	vertical-align: middle;
+}
+.middle{
+	display: flex;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.quote{
+	justify-content: flex-end;
+}
+.bottom{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.hobbies{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	flex-wrap:  wrap;
+}
+.hiking{
+	width: 200px;
+	margin: 30px 0px;
+}
+.snowboard{
+	width: 200px;
+	margin: 30px 0px;
+}
+.seattle{
+	width: 200px;
+	margin: 30px 0px;
+}
+.golf{
+	width: 200px;
+	margin: 30px 0px;
+}
+button{
+	background-color: black;
+	color: white;
+}
+@media only screen and (max-width: 768px){
+	.header, .list, .top, .middle, .bottom, .hobbies{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
